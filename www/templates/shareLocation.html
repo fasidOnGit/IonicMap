@@ -1,0 +1,20 @@
+<ion-view title="iMap">
+
+<ion-content>
+   <div>
+    <div id="map"></div>
+    <div class="list list-insert padding" width="80%">
+      <form ng-submit="addMasjid(masjid)" name="addForm" novalidate>
+      <label class="item item-input">
+        <input type="text" ng-model="masjid.name" name="name" placeholder="Name of the Masjid.." ng-required="true">
+        <p class="error validationerror" ng-show="addForm.name.$invalid && addForm.name.$touched ">Please enter a name for the masjid</p>
+        <input type="text" name="address" ng-model="masjid.address" placeholder="Address" ng-required="true">
+        <p class="error validationerror" ng-show="addForm.address.$invalid && addForm.address.$touched " ng-minlength="10">Please Enter a Address</p>
+        <input type="number" name="phno" ng-model="masjid.phno" placeholder="Contact Number" ng-minlength="8" ng-maxlength="12" >
+        <p class="error validationerror" ng-show="addForm.phno.$invalid && addForm.phno.$touched">Please Enter a Valid Phone Number.</p>
+      </label>
+    </form>
+    </div>
+  </div>
+</ion-content>
+</ion-view>
