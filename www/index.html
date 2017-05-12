@@ -35,38 +35,25 @@
   <body ng-app="starter">
 
     <ion-pane>
-      <ion-header-bar class="bar-positive">
-        <button type="button" class="icon ion-navicon button  button-clear" name="button"></button>
-        <h1 class="title">Ionic Blank Starter</h1>
-        <button type="button" class="icon ion-gear-a button  button-clear" name="button"></button>
-      </ion-header-bar>
-      <ion-tabs class="tabs-icon-top">
-        <ion-tab badge="1" badge-style="badge-assertive" icon="ion-map" title="Map"></ion-tab>
-        <ion-tab icon="ion-plus-circled" title="Add Masjid"></ion-tab>
-        <ion-tab icon="ion-calendar" title="Calendar"></ion-tab>
-      </ion-tabs>
-      <!-- <div class="tabs-striped tabs-background-calm tabs-color-light  tabs-top"> -->
-      <!-- <div class="tabs  tabs-icon-top">
-        <a  class="tab-item"><i class="icon ion-map"></i>Map</a>
-        <a  class="tab-item"><i class="icon ion-plus-circled"></i>Add</a>
-        <a  class="tab-item"><i class="icon ion-calendar"></i>Calender</a>
-      </div> -->
-      <!-- </div> -->
-
-      <!-- <ion-content class="padding has-subheader">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas egestas lacus ut est maximus, quis tempor urna mollis. Donec tempor facilisis metus, vitae bibendum erat auctor at. Vivamus ut pulvinar neque. Aenean consectetur, mi nec commodo molestie, justo metus tincidunt sapien, ut molestie mi nibh at velit. Praesent et sodales risus, id semper elit. Pellentesque nisl risus, luctus rhoncus laoreet et, laoreet sed nibh. In sapien ipsum, auctor sed hendrerit at, euismod vitae odio. Fusce non nunc sit amet magna tempus cursus. Ut at mauris mollis diam eleifend convallis non eget sapien. Maecenas venenatis purus vitae arcu ultrices, id pulvinar mauris iaculis. Nunc lobortis porta sapien, sit amet egestas felis mattis ac. Aliquam erat volutpat. Sed eleifend lacinia sapien, ac lobortis arcu tincidunt ut.</p>
-
-              <p><button type="button" name="button" class="icon icon-right ion-ionic button button-positive"> ionic</button></p>
-                        <div class="button button-bar">
-              <button  class=" icon ion-social-twitter button button-positive"></button>
-              <button  class="icon ion-social-facebook button button-positive"></button>
-              <button  class="icon ion-social-youtube button button-positive"></button>
-              </div>
-      </ion-content>
-
-      <ion-footer-bar class="bar-positive">
-        <h1 class="title">Footer</h1>
-      </ion-footer-bar> -->
+        <ion-header-bar class="bar-dark">
+          <h2 class="title">Artist List</h2>
+        </ion-header-bar>
+        <div class="bar bar-subheader item-input-inset bar-ligth">
+          <label  class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder="Search">
+          </label>
+        </div>
+        <ion-content ng-controller="ListController" class="has-subheader">
+          <ion-list>
+            <ion-item class="item-thumbnail-left" ng-repeat='item in artists'>
+              <img src="img/{{item.shortname}}.jpg" alt="{{item.shortname}} Photo">
+                <h2>{{item.name}}</h2>
+                  <h3>{{item.reknown}}</h3>
+                    <p>{{item.bio}} </p>
+            </ion-item>
+          </ion-list> 
+        </ion-content>
     </ion-pane>
   </body>
 </html>
