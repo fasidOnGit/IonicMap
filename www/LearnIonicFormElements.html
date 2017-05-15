@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Ionic Blank Starter</h1>
+      </ion-header-bar>
+      <ion-content>
+        <div class="list list-inset">
+          <label  class="item item-input item-floating-label">
+            <span class="input-label">First Name</span>
+            <input type="text" placeholder="Your First Name">
+          </label>
+          <label  class="item item-input item-stacked-label">
+            <span class="input-label">Last Name</span>
+            <input type="text" placeholder="Your Last Name">
+          </label>
+          <div class="item item-input-inset">
+            <label for="" class="item-input-wrapper">
+              <input type="text" placeholder="Address">
+            </label>
+            <button class="button button-small button-positive">search</button>
+          </div>
+          <label  class="item item-input"><
+            <textarea placeholder="Comments"></textarea>
+          </label>
+          <!-- checkbox -->
+          <div class="item item-divider">I want to be a ..</div>
+          <div class="item item-checkbox">
+            <label class="checkbox">
+              <input type="checkbox">
+            </label>
+            <span class="input-label">Music Prodigy</span>
+          </div>
+          <div class="item item-checkbox">
+            <label class="checkbox">
+              <input type="checkbox">
+            </label>
+            <span class="input-label">Rockstar</span>
+          </div>
+          <div class="item item-checkbox">
+            <label class="checkbox">
+              <input type="checkbox">
+            </label>
+            <span class="input-label">Hollywood Star</span>
+          </div>
+
+          <!-- Radio -->
+          <div class="item item-divider">Favorite social media network</div>
+          <label  class="item item-radio">
+            <input type="radio" name="social">
+            <div class="item-content">Facebook</div>
+            <i class="radio-icon ion-social-facebook"></i>
+          </label>
+          <label  class="item item-radio">
+            <input type="radio" name="social">
+            <div class="item-content">Twitter</div>
+            <i class="radio-icon ion-social-twitter">
+
+            </i>
+          </label>
+          <label  class="item item-radio">
+            <input type="radio" name="social">
+            <div class="item-content">Youtube</div>
+            <i class="radio-icon ion-social-youtube"></i>
+          </label>
+              <!-- Toggle -->
+            <div class="item item-toggle">
+              <span class="input-label">Awesomeness</span>
+              <label  class="toggle">
+                <input type="checkbox">
+                <div class="track"><div class="handle"></div></div>
+              </label>
+            </div>
+
+            <div class="item range range-royal">
+              <span class="input-label">Feeling</span>
+              <i class="icon ion-sad-outline"></i>
+              <input type="range" name="feeling"
+               min="0" max="100" value="50">
+               <i class="icon ion-happy"></i>
+            </div>
+
+            <label for="" class="item item-input item-select">
+              <div class="input-label">Favorite Pet</div>
+              <select>
+                <option>Dog</option>
+                <option>Cat</option>
+                <option>Elephant</option>
+              </select>
+            </label>
+
+        </div>
+        <ion-list>
+          <ion-item class="item-thumbnail-left item-text-wrap">
+            <img src="http://placehold.it/100x100" alt="Photo">
+            <h2>Name</h2>
+            <h3>Reknwon</h3>
+            <p>Lorem Ipsum dolwo sit amet consectoerehr adupjcigng elute . Possimus a nobis coroporis quis fugha ex incidunt nihil vero archotecto ratinoe</p>
+          </ion-item>
+        </ion-list>
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>

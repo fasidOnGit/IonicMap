@@ -23,3 +23,9 @@
 .tagline > h5 {
 	color : darkgreen;
 }
+
+ion-list>ion-item#tn {
+	size : 10px;
+	max-height: 10px;
+	max-width: 50px;
+}

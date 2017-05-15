@@ -6,14 +6,14 @@
       "schedule": [
         {
           "time": "9:30-10:30am",
-          "shortname": "LaVonne_LaRue",
+          "shortname": "masjid9",
           "artist": "LaVonne L. LaRue",
           "room": "Elizabeth Hall",
           "description": "Watch LaVonne L. LaRue, a Chicago graffiti artist share her love and skill of mural art on Monday's schedule, as she starts the painting of a 20-foot high wall in the Rousseau Room of Hotel Contempo, which will be finished at the end of the conference. Make sure to show up a bit early, as this session will be standing-room only.",
           "title": "Art in Unexpected Places"
         }, {
           "time": "11:00am-1pm",
-          "shortname": "Hassum_Harrod",
+          "shortname": "masjid8",
           "name": "Hassum Harrod",
           "room": "Victoria Hall",
           "description": "Drawing and painting flowers may seem like a first-year art student's assignment, but Hassum Harrod brings depth, shadows, light, and color to new heights with his unique technique of painting on canvas with ceramic glaze. This session is sure to be a hit with mixed media buffs.",
@@ -32,7 +32,7 @@
       "schedule": [
         {
           "time": "9:30-10:30am",
-          "shortname": "Jennifer_Jerome",
+          "shortname": "masjid7",
           "artist": "Jennifer Jerome",
           "room": "Elizabeth Hall",
           "description": "Jennifer Jerome, a native of New Orleans, whose work has centered around abstract images that depict flooding and rebuilding, will talk about how the floods inspired her artistically, and how, despite the sadness of devastation and lives lost, her work also depicts the hope and togetherness of a community that has persevered.",
@@ -44,7 +44,7 @@
           "title": "Ice Sculptures"
         },{
           "time": "2:30-4:00pm",
-          "shortname": "Hillary_Goldwynn",
+          "shortname": "masjid6",
           "artist": "Hillary Hewitt Goldwynn-Post",
           "room": "Dennison Hall",
           "description": "Hilary Goldywynn Post has been inspiring deep sea divers to paint what they experience under water, since she began diving at the early age of 14. Not only does she explain texture, color, and tools, but she also explains methods for capturing your under sea explorations in your mind for future expulsion onto canvas. And, even if snorkeling is as far under water as you're willing to go, Hilary's techniques will work just as well for you.",
@@ -56,14 +56,14 @@
       "schedule": [
         {
           "time": "9:30 to 10:30 am",
-          "shortname": "Barot_Bellingham",
+          "shortname": "masjid5",
           "artist": "Barot Bellingham",
           "room": "Elizabeth Hall",
           "description": "Barot Bellingham's new collection is pieced together from seemingly unrelated individual works of varying topic. From portraits to landscapes to abstract, Barot does it all, and does it all well. The only unifying factor is the excellence in form, technique, color, and balance that exudes from each and every individual work in The Un-Collection. Meet Barot, and his undeniably original collection of art, and be forever enchanted.",
           "title": "The Un-Collection"
         },{
           "time": "10:45 to 12:00 pm",
-          "shortname": "Xhou_Ta",
+          "shortname": "masjid4",
           "artist": "Xhou Ta",
           "room": "Dennison Hall",
           "description": "Get a glimpse at the rare offerings in Xhou's exhibit, ranging from an exquisite skyscraper painted on a grain of rice, to a miniature sculpture of an oak tree filled with detailed animals, the size of a thimble. Items are shown on a large screen, using Xhou's patented rear-projection device that magnifies the image to reveal incredible detail. Beyond the Naked Eye is a fantastic exhibit that blends art and science in a most magical way.",
@@ -75,21 +75,21 @@
       "schedule": [
         {
           "time": "09:30 to 10:30 am",
-          "shortname": "Hassum_Harrod",
+          "shortname": "masjid1",
           "artist": "Hassum Harrod",
           "room": "Elizabeth Hall",
           "description": "Hassum's inherent ability to create color palettes that illuminate an image and allure an audience, has drawn praise from traditionalists as well as modern artists - no small feat in today's diverse art world. His master's thesis at San Francisco Art Academy is entitled \"Color Upon Color – The Mixing and Reinventing of Color.\" It is this thesis that prompted Hillford & Bilken to publish his solo-authored book on color, that will be used in undergraduate art programs throughout the world starting next year.",
           "title": "The Use and Absence of Color in Modern Art"
         },{
           "time": "10:30 to 11:30 am",
-          "shortname": "Constance_Smith",
+          "shortname": "masjid2",
           "artist": "Constance Olivia Smith",
           "room": "Victoria Hall",
           "description": "In the Art of Salvaging, Olivia will share her talent for finding and selecting scrap materials, as well as the philosophy behind several of her more celebrated works of art. If you're interested in recycling and mixed media, this session will include a lively discussion of both, from the woman who Art International Digest calls the \"foremost queen of scrap art.\"",
           "title": "The Art of Salvaging"
         },{
           "time": "1:30 to 2:30",
-          "shortname": "Riley_Rewington",
+          "shortname": "masjid3",
           "artist": "Riley Rudolph Rewington",
           "room": "Dennison Hall",
           "description": "The leader of the MMA artistic movement in his hometown of Portland, Riley Rudolph Rewington draws a crowd wherever he goes. Mixing street performance, video, music, and traditional art, Riley has created some of the most unique and deeply poignant abstract works of his generation. Join Riley in Dennison Hall for an intimate discussion on The Art of Abstract, in which he shares his philosophies about modern abstract art, and critiques some of this own work – with complete candor and a healthy dose of personality.",
@@ -99,7 +99,7 @@
     }
   ],
 "speakers" : [
-  { 
+  {
     "name":"Masjid 1",
     "shortname":"masjid1",
     "reknown":"Royal Academy of Painting and Sculpture",
