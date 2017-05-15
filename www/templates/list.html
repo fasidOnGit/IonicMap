@@ -1,0 +1,47 @@
+
+<!-- <ion-header-bar class="bar-positive"> -->
+<ion-view view-title="Masjid List">
+     
+  <ion-nav-buttons side="primay">
+        
+  
+  <button class="button button-icon ion-minus-circled" ng-click="data.showDeleted=!data.showDeleted; data.showReorder=false;"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="secondary">
+        
+  
+  <!-- <h2 class="title">Artist List</h2> -->
+  <button class="button button-icon ion-navicon" ng-click="data.showReorder=!data.showReorder; data.showDeleted=false;"></button>
+  </ion-nav-buttons>
+<!-- </ion-header-bar> -->
+<div class="bar bar-subheader item-input-inset bar-ligth">
+  <label  class="item-input-wrapper">
+    <i class="icon ion-search placeholder-icon"></i>
+    <input type="search" placeholder="Search" ng-model="query">
+  </label>
+</div>
+<ion-content  class="has-subheader">
+  <ion-refresher on-refresh="doRefresh()">
+
+  </ion-refresher>
+  <ion-list show-delete="data.showDeleted" show-reorder="data.showReorder">
+    <ion-item ng-class="{'star' : item.star}" class="item-thumbnail-left item-icon-right item-text-wrap" ng-repeat='item in artists | filter:query' href='#/tab/list/{{item.shortname}}'>
+      <img ng-src="img/{{item.shortname}}.jpg" alt="{{item.shortname}} Photo">
+      <h2>{{item.name}}</h2>
+      <h3>{{item.reknown}}</h3>
+      <p>{{item.bio | limitTo:150}} {{item.bio.length > 150 ? '&hellip;' : ''}}</p>
+      <button class="button button-clear icon ion-star button-assertive" ng-click="toggleStar(item)" ng-show="item.star"></button>
+      <ion-option-button class="button-dark" ng-click="toggleStar(item)">
+        <i class="icon ion-star"></i>
+      </ion-option-button>
+      <ion-delete-button class="ion-minus-circled"
+       ng-click="onItemDelete(item)">
+      </ion-delete-button>
+      <ion-reorder-button class="ion-navicon" on-reorder="moveItem(item ,$fromIndex , $toIndex) ">
+        
+      </ion-reorder-button>
+    </ion-item>
+  </ion-list> 
+</ion-content>
+</ion-view>
